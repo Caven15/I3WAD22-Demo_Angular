@@ -1,0 +1,7 @@
+<ul>
+  <app-child *ngFor="let person of listPersonne"
+  [id]="person.id" [prenom]="person.prenom"
+  (clickOnChildDelete)="deleteChildById($event)"
+  (clickChildUpdatePrenom)="updateChildPrenom($event)">
+  </app-child>
+</ul>

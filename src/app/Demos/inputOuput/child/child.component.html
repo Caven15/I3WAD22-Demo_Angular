@@ -1,0 +1,8 @@
+
+<li>
+  <div>{{id}} - {{prenom}} => Opération disponible</div>
+  <button (click)="deleteMe(id)">Delete</button>
+  <button (click)="showInput(prenom)">Update prenom</button>
+  <input *ngIf="triggerInputName" type="text" [(ngModel)]="newPrenom">
+  <button *ngIf="triggerInputName" (click)="saveOnParent(id)">Valider</button>
+</li>

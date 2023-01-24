@@ -1,0 +1,5 @@
+<button (click)="connexion()">Connexion</button>
+<button (click)="logout()">Logout</button>
+
+<p *ngIf="isConnected">je suis connecté</p>
+<p *ngIf="!isConnected">je suis offine</p>

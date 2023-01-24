@@ -1,0 +1,26 @@
+<ul>
+    <li *ngFor="let item of listePokemon">
+        <p>{{item.name}} => <a class="btn btn-primary" href="{{item.url}}">lien api</a><button class="btn btn-primary" (click)="getOne(item.url)">Detail</button></p>
+    </li>
+</ul>
+<div *ngIf="currentPokemon">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Height</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{pokemon.Id}}</th>
+            <td>{{pokemon.Name}}</td>
+            <td>{{pokemon.Weight}}</td>
+            <td>{{pokemon.Height}}</td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+</div>
